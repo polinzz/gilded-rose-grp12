@@ -24,7 +24,7 @@ test("My first scenario", async () => {
     await runGoldenMaster(async () => {
         const items = [new Item("TOTO", 10, 10)];
         const gilderRose = new GildedRose(items);
-        console.log(gilderRose.updateQuality());
+        gilderRose.updateQuality();
     });
 });
 
@@ -49,7 +49,7 @@ test("My second scenario", async () => {
             const items = [new Item(combination.name, combination.sellIn, combination.quality)];
 
             const gilderRose = new GildedRose(items);
-            console.log(gilderRose.updateQuality());
+            gilderRose.updateQuality();
 
         }
     });

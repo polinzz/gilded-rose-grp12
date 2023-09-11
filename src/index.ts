@@ -3,7 +3,7 @@ export class Item {
   sellIn: number;
   quality: number;
 
-  constructor(name, sellIn, quality) {
+  constructor(name: string, sellIn: number, quality: number) {
     this.name = name;
     this.sellIn = sellIn;
     this.quality = quality;
@@ -19,9 +19,11 @@ export class GildedRose {
 
   updateQuality(): Object {
     for (let i = 0; i < this.items.length; i++) {
+      console.log(`INPUT=> Item Name :${this.items[i].name}, Quality: ${this.items[i].quality}, SellIn: ${this.items[i].sellIn}`);
       if (this.items[i].name != "Aged Brie" && this.items[i].name != "Backstage passes to a TAFKAL80ETC concert") {
         if (this.items[i].quality > 0) {
           if (this.items[i].name != "Sulfuras, Hand of Ragnaros") {
+
             this.items[i].quality = this.items[i].quality - 1;
           }
         }
@@ -62,8 +64,8 @@ export class GildedRose {
           }
         }
       }
+      console.log(`OUTPUT=> Item Name :${this.items[i].name}, Quality: ${this.items[i].quality}, SellIn: ${this.items[i].sellIn}`);
     }
-
     return this.items;
   }
 }
