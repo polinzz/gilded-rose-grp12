@@ -1,0 +1,312 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`My first scenario 1`] = `
+[
+  [
+    Item {
+      "name": "TOTO",
+      "quality": 9,
+      "sellIn": 9,
+    },
+  ],
+]
+`;
+
+exports[`My second scenario 1`] = `
+[
+  [
+    Item {
+      "name": "+5 Dexterity Vest",
+      "quality": 44,
+      "sellIn": 9,
+    },
+  ],
+  [
+    Item {
+      "name": "+5 Dexterity Vest",
+      "quality": 44,
+      "sellIn": 1,
+    },
+  ],
+  [
+    Item {
+      "name": "+5 Dexterity Vest",
+      "quality": 44,
+      "sellIn": 4,
+    },
+  ],
+  [
+    Item {
+      "name": "+5 Dexterity Vest",
+      "quality": 43,
+      "sellIn": -1,
+    },
+  ],
+  [
+    Item {
+      "name": "+5 Dexterity Vest",
+      "quality": 44,
+      "sellIn": 14,
+    },
+  ],
+  [
+    Item {
+      "name": "+5 Dexterity Vest",
+      "quality": 44,
+      "sellIn": 2,
+    },
+  ],
+  [
+    Item {
+      "name": "+5 Dexterity Vest",
+      "quality": 43,
+      "sellIn": -2,
+    },
+  ],
+  [
+    Item {
+      "name": "Aged Brie",
+      "quality": 46,
+      "sellIn": 9,
+    },
+  ],
+  [
+    Item {
+      "name": "Aged Brie",
+      "quality": 46,
+      "sellIn": 1,
+    },
+  ],
+  [
+    Item {
+      "name": "Aged Brie",
+      "quality": 46,
+      "sellIn": 4,
+    },
+  ],
+  [
+    Item {
+      "name": "Aged Brie",
+      "quality": 47,
+      "sellIn": -1,
+    },
+  ],
+  [
+    Item {
+      "name": "Aged Brie",
+      "quality": 46,
+      "sellIn": 14,
+    },
+  ],
+  [
+    Item {
+      "name": "Aged Brie",
+      "quality": 46,
+      "sellIn": 2,
+    },
+  ],
+  [
+    Item {
+      "name": "Aged Brie",
+      "quality": 47,
+      "sellIn": -2,
+    },
+  ],
+  [
+    Item {
+      "name": "Elixir of the Mongoose",
+      "quality": 44,
+      "sellIn": 9,
+    },
+  ],
+  [
+    Item {
+      "name": "Elixir of the Mongoose",
+      "quality": 44,
+      "sellIn": 1,
+    },
+  ],
+  [
+    Item {
+      "name": "Elixir of the Mongoose",
+      "quality": 44,
+      "sellIn": 4,
+    },
+  ],
+  [
+    Item {
+      "name": "Elixir of the Mongoose",
+      "quality": 43,
+      "sellIn": -1,
+    },
+  ],
+  [
+    Item {
+      "name": "Elixir of the Mongoose",
+      "quality": 44,
+      "sellIn": 14,
+    },
+  ],
+  [
+    Item {
+      "name": "Elixir of the Mongoose",
+      "quality": 44,
+      "sellIn": 2,
+    },
+  ],
+  [
+    Item {
+      "name": "Elixir of the Mongoose",
+      "quality": 43,
+      "sellIn": -2,
+    },
+  ],
+  [
+    Item {
+      "name": "Sulfuras, Hand of Ragnaros",
+      "quality": 45,
+      "sellIn": 10,
+    },
+  ],
+  [
+    Item {
+      "name": "Sulfuras, Hand of Ragnaros",
+      "quality": 45,
+      "sellIn": 2,
+    },
+  ],
+  [
+    Item {
+      "name": "Sulfuras, Hand of Ragnaros",
+      "quality": 45,
+      "sellIn": 5,
+    },
+  ],
+  [
+    Item {
+      "name": "Sulfuras, Hand of Ragnaros",
+      "quality": 45,
+      "sellIn": 0,
+    },
+  ],
+  [
+    Item {
+      "name": "Sulfuras, Hand of Ragnaros",
+      "quality": 45,
+      "sellIn": 15,
+    },
+  ],
+  [
+    Item {
+      "name": "Sulfuras, Hand of Ragnaros",
+      "quality": 45,
+      "sellIn": 3,
+    },
+  ],
+  [
+    Item {
+      "name": "Sulfuras, Hand of Ragnaros",
+      "quality": 45,
+      "sellIn": -1,
+    },
+  ],
+  [
+    Item {
+      "name": "Backstage passes to a TAFKAL80ETC concert",
+      "quality": 47,
+      "sellIn": 9,
+    },
+  ],
+  [
+    Item {
+      "name": "Backstage passes to a TAFKAL80ETC concert",
+      "quality": 48,
+      "sellIn": 1,
+    },
+  ],
+  [
+    Item {
+      "name": "Backstage passes to a TAFKAL80ETC concert",
+      "quality": 48,
+      "sellIn": 4,
+    },
+  ],
+  [
+    Item {
+      "name": "Backstage passes to a TAFKAL80ETC concert",
+      "quality": 0,
+      "sellIn": -1,
+    },
+  ],
+  [
+    Item {
+      "name": "Backstage passes to a TAFKAL80ETC concert",
+      "quality": 46,
+      "sellIn": 14,
+    },
+  ],
+  [
+    Item {
+      "name": "Backstage passes to a TAFKAL80ETC concert",
+      "quality": 48,
+      "sellIn": 2,
+    },
+  ],
+  [
+    Item {
+      "name": "Backstage passes to a TAFKAL80ETC concert",
+      "quality": 0,
+      "sellIn": -2,
+    },
+  ],
+  [
+    Item {
+      "name": "Conjured Mana Cake",
+      "quality": 44,
+      "sellIn": 9,
+    },
+  ],
+  [
+    Item {
+      "name": "Conjured Mana Cake",
+      "quality": 44,
+      "sellIn": 1,
+    },
+  ],
+  [
+    Item {
+      "name": "Conjured Mana Cake",
+      "quality": 44,
+      "sellIn": 4,
+    },
+  ],
+  [
+    Item {
+      "name": "Conjured Mana Cake",
+      "quality": 43,
+      "sellIn": -1,
+    },
+  ],
+  [
+    Item {
+      "name": "Conjured Mana Cake",
+      "quality": 44,
+      "sellIn": 14,
+    },
+  ],
+  [
+    Item {
+      "name": "Conjured Mana Cake",
+      "quality": 44,
+      "sellIn": 2,
+    },
+  ],
+  [
+    Item {
+      "name": "Conjured Mana Cake",
+      "quality": 43,
+      "sellIn": -2,
+    },
+  ],
+]
+`;
