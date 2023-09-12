@@ -9,50 +9,51 @@ export class GildedRose {
   doUpdateQuality(): Item[] {
     for (const currentItem of this.items) {
       console.log(`INPUT=> Item Name :${currentItem.name}, Quality: ${currentItem.quality}, SellIn: ${currentItem.sellIn}`);
-      if (currentItem.name != "Aged Brie" && currentItem.name != "Backstage passes to a TAFKAL80ETC concert") {
-        decreaseQuality(currentItem)
-      } else {
-        if (this.isLessThanMaxQuality(currentItem.quality)) {
-          this.increaseQuality(currentItem)
-          if (currentItem.name == "Backstage passes to a TAFKAL80ETC concert") {
-            isSellInLessthan(currentItem)
+      switch (currentItem.name) {
+        case "Aged Brie":
+        case "Backstage passes to a TAFKAL80ETC concert":
+          if (isLessThanMaxQuality(currentItem.quality)) {
+            increaseQuality(currentItem);
+            if (currentItem.name === "Backstage passes to a TAFKAL80ETC concert") {
+              isSellInLessthan(currentItem);
+            }
           }
-        }
+          break;
+        default:
+          decreaseQuality(currentItem);
+          break;
       }
-      if (currentItem.name != "Sulfuras, Hand of Ragnaros") {
-        currentItem.sellIn = currentItem.sellIn - 1;
+
+      if (currentItem.name !== "Sulfuras, Hand of Ragnaros") {
+        currentItem.sellIn--;
       }
+
       if (currentItem.sellIn < 0) {
-        if (currentItem.name != "Aged Brie") {
-          if (currentItem.name != "Backstage passes to a TAFKAL80ETC concert") {
-            decreaseQuality(currentItem)
-          } else {
-            currentItem.quality = currentItem.quality - currentItem.quality;
-          }
-        } else {
-          increaseQuality(currentItem)
+        switch (currentItem.name) {
+          case "Aged Brie":
+            increaseQuality(currentItem);
+            break;
+          case "Backstage passes to a TAFKAL80ETC concert":
+            currentItem.quality = 0;
+            break;
+          case "Sulfuras, Hand of Ragnaros":
+            break;
+          default:
+            if (currentItem.quality > 0) {
+              decreaseQuality(currentItem);
+            }
+            break;
         }
       }
+
       console.log(`OUTPUT=> Item Name :${currentItem.name}, Quality: ${currentItem.quality}, SellIn: ${currentItem.sellIn}`);
     }
     return this.items;
   }
-
-
-  private isLessThanMaxQuality(quality: number): boolean {
-    return quality < 50;
-  }
-
-  private increaseQuality(item: Item): void {
-    item.quality = item.quality + 1;
-  }
-
-
 }
 
 const MAXIMUM_QUALITY = 50;
 const MINIMUM_QUALITY = 0;
-
 
 const isLessThanMaxQuality = (quality: number) => quality < MAXIMUM_QUALITY;
 const isGreaterThanMinQuality = (quality: number) => quality > MINIMUM_QUALITY;
