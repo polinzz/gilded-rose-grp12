@@ -1,6 +1,6 @@
 import runGoldenMaster from "jest-golden-master";
-import { GildedRose, Item } from "./index";
-
+import { GildedRose } from "./index";
+import { Item } from "./Item";
 // Définir la fonction generateCombinations
 function generateCombinations(
     names: string[],
@@ -24,7 +24,7 @@ test("My first scenario", async () => {
     await runGoldenMaster(async () => {
         const items = [new Item("TOTO", 10, 10)];
         const gilderRose = new GildedRose(items);
-        gilderRose.updateQuality();
+        gilderRose.doUpdateQuality();
     });
 });
 
@@ -49,7 +49,7 @@ test("My second scenario", async () => {
             const items = [new Item(combination.name, combination.sellIn, combination.quality)];
 
             const gilderRose = new GildedRose(items);
-            gilderRose.updateQuality();
+            gilderRose.doUpdateQuality();
 
         }
     });
