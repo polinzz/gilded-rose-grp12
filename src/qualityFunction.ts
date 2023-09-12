@@ -20,25 +20,16 @@ const isSellInLessthan = (item: Item) => {
 }
 
 export const handleItemQuality = (currentItem: Item): void => {
-    switch (currentItem.name) {
-        case "Aged Brie":
-        case "Backstage passes to a TAFKAL80ETC concert":
-            handleSpecialItemQuality(currentItem);
-            break;
-        default:
-            decreaseQuality(currentItem);
-            break;
-    }
-}
+    (currentItem.name === "Aged Brie" || currentItem.name === "Backstage passes to a TAFKAL80ETC concert")
+        ? handleSpecialItemQuality(currentItem)
+        : decreaseQuality(currentItem);
+};
 
 export const handleSpecialItemQuality = (currentItem: Item): void => {
-    if (isLessThanMaxQuality(currentItem.quality)) {
-        increaseQuality(currentItem);
-        if (currentItem.name === "Backstage passes to a TAFKAL80ETC concert") {
-            isSellInLessthan(currentItem);
-        }
-    }
-}
+    isLessThanMaxQuality(currentItem.quality)
+        ? (increaseQuality(currentItem), currentItem.name === "Backstage passes to a TAFKAL80ETC concert" && isSellInLessthan(currentItem))
+        : void 0;
+};
 
 export const handleExpiredItem = (currentItem: Item): void => {
     switch (currentItem.name) {
@@ -49,9 +40,7 @@ export const handleExpiredItem = (currentItem: Item): void => {
             currentItem.quality = 0;
             break;
         default:
-            if (currentItem.quality > 0) {
-                decreaseQuality(currentItem);
-            }
+            (currentItem.quality > 0) && decreaseQuality(currentItem);
             break;
     }
-}
+};
